@@ -10,6 +10,11 @@
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
     <script src="main.js"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
+    crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     
     <title>News-Type</title>
@@ -40,6 +45,22 @@
             <li><a href="#">Category</a></li>
         </ul>
         </div>
+        <div class="mobnav">
+            <a onclick="menuAct();"><i class="fa fa-bars"></i></a>
+            <ul id="mobnav">
+                <li><a href="#">Kategory</a></li>
+                <li><a href="#">Kategory</a></li>
+                <li><a href="#">Kategory</a></li>
+                <li><a href="#">Kategory</a></li>
+                <li><a href="#">Kategory</a></li>
+                <li><a href="#">Kategory</a></li>
+                <li><a href="#">Kategory</a></li>
+                <li><a href="#">Kategory</a></li>
+                <li><a href="#">Kategory</a></li>
+                <li><a href="#">Kategory</a></li>
+                <li><a href="#">Kategory</a></li>
+            </ul>
+            </div>
     </div>
 
     <div class="jumbo">
@@ -61,6 +82,11 @@
     <div class="footer">
 
     </div>
-
+<script>
+    function menuAct() {
+        document.getElementById("mobnav").style.display = "block";
+        $(this).toggleClass('fa fa-times');
+    }
+</script>
 </body>
 </html>

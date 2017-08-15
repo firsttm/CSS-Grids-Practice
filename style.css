@@ -41,15 +41,15 @@ body {
 }
 .navbar {
     grid-row: 2;
-    grid-auto-columns: 1 / span 3;
+    grid-column: 1 / span 3;
     grid-area: navbar;
 }
-.navbar ul {
+.nav-inner ul {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
 }
-.navbar ul li {
+.nav-inner ul li {
     border-bottom: 1px solid #000;
 }
 .navbar a {
@@ -66,6 +66,26 @@ body {
     overflow: hidden;
     background-color: #000;
 }
-.jumbo > div {
+.mobnav {
+    /* display: none; */
 
+}
+.mobnav ul {
+    /* display: none; */
+    list-style-type: none;
+}
+.mobnav i {
+    color: #000;
+    font-size: 2em;
+}
+.mobnav i:hover {
+    cursor: pointer;
+}
+@media(max-width: 768px){
+    .mobnav {
+        display: block;
+    }
+    .nav-inner {
+        display: none;
+    }
 }
