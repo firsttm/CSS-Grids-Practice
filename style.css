@@ -66,6 +66,46 @@ body {
 .navbar a:hover {
     color: #878484;
 }
+.dropbtn {
+    background-color: #fff;
+    outline: 0;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.mobnav {
+    position: relative;
+    display: none;
+}
+@media only screen and (max-width: 786px) {
+    .mobnav {
+        display: inline-block;
+        transition-duration: 0.3s;
+    }
+    .nav-inner {
+        display: none;
+    }
+}
+.content-m {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.6;
+    z-index: 1;
+    width: 200px;
+    font-size: 1.3em;
+    padding: 2px;
+
+}
+.content-m a {
+    color: #fff;
+    opacity: 1;
+    text-decoration: none;
+    display: block;
+}
+.show {
+    display: block;
+}
 .jumbo {
     grid-row: 3;
     grid-column: 1 / span 3;
@@ -73,31 +113,6 @@ body {
     overflow: hidden;
     background-color: #000;
 }
-/* .mobnav {
-    display: none;
-}
-.mobnav ul {
-    display: none; 
-    list-style-type: none;
-}
-.mobnav i {
-    color: #000;
-    font-size: 2em;
-}
-.mobnav i:hover {
-    cursor: pointer;
-}
-
-@media(max-width: 768px){
-    .mobnav {
-        display: block;
-    }
-    .nav-inner {
-        display: none;
-    }
-} */
-
-
 .main {
     grid-area: main;
     grid-row: 4;
@@ -164,4 +179,9 @@ body {
 }
 .lis-info {
     font-size: 0.7em;
+}
+.footer {
+    grid-area: footer;
+    background-color: #474646;
+    height: 400px;
 }

@@ -40,28 +40,20 @@
             <li><a href="#">Category</a></li>
             <li><a href="#">Category</a></li>
             <li><a href="#">Category</a></li>
-            <li><a href="#">Category</a></li>
-            <li><a href="#">Category</a></li>
-            <li><a href="#">Category</a></li>
-            <li><a href="#">Category</a></li>
         </ul>
         </div>
-        <!-- <div class="mobnav">
-            <a onclick="menuAct();"><i class="fa fa-bars"></i></a>
-            <ul id="mobnav">
-                <li><a href="#">Kategory</a></li>
-                <li><a href="#">Kategory</a></li>
-                <li><a href="#">Kategory</a></li>
-                <li><a href="#">Kategory</a></li>
-                <li><a href="#">Kategory</a></li>
-                <li><a href="#">Kategory</a></li>
-                <li><a href="#">Kategory</a></li>
-                <li><a href="#">Kategory</a></li>
-                <li><a href="#">Kategory</a></li>
-                <li><a href="#">Kategory</a></li>
-                <li><a href="#">Kategory</a></li>
-            </ul>
-            </div> -->
+       
+        <div class="mobnav">
+            <a onclick="menuAct()" class="dropbtn"><i class="fa fa-bars"></i></a>
+            <div id="mob" class="content-m">
+              <a href="#">Category</a>
+              <a href="#">Category</a>
+              <a href="#">Category</a>
+              <a href="#">Category</a>
+              <a href="#">Category</a>
+              <a href="#">Category</a>
+            </div>
+        </div>
     </div>
 
     <div class="jumbo">
@@ -206,15 +198,17 @@
     </div>
 </div>
     <div class="footer">
-
+        
     </div>
 </div>
-<!-- <script>
+<script>
     function menuAct() {
-        document.getElementById("mobnav").style.display = "block";
-        $(this).toggleClass('fa fa-times');
+        document.getElementById("mob").classList.toggle("show");
     }
-</script> -->
+    function contactPop() {
+        document.getElementById("contactf").classList.toggle("show");
+    }
+</script>
 
 </body>
 </html>
